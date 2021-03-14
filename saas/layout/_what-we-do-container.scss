@@ -1,0 +1,9 @@
+.what-we-do-container {
+  display: flex;
+}
+.what-we-do {
+  padding-bottom: 94px;
+}
+.what-we-do-item:not(:last-child) {
+  margin-right: 50px;
+}

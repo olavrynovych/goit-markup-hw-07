@@ -1,0 +1,19 @@
+.about {
+  display: flex;
+  height: 600px;
+  background: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/about-background.jpg');
+  background-repeat: no-repeat;
+  /* max-width: 1600px; */
+  background-size: cover;
+  justify-content: center;
+}
+.about .container {
+  /* padding: 200px; */
+  padding-top: 200px;
+  text-align: center;
+}

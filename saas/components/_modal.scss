@@ -1,0 +1,203 @@
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding-left: 5px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  padding-top: 4px;
+}
+.modal-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+.close-icon {
+  height: 18px;
+  width: 18px;
+  vertical-align: center;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-text-header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #212121;
+}
+.form-input-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+.form-input {
+  margin-top: 4px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+}
+.form-input:focus + .modal-form-icon {
+  fill: #2196f3;
+}
+
+.form-btn {
+  width: 200px;
+  height: 50px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  border: none;
+  /* identical to box height, or 187% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  align-self: center;
+  color: #ffffff;
+}
+.form-btn:hover,
+.form-btn:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-message {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+  margin-top: 4px;
+}
+.form-message::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-message:focus {
+  outline: none;
+  border-color: #188ce8;
+}
+.modal-input-wrapper {
+  display: block;
+  position: relative;
+}
+.icon-person {
+  height: 12px;
+  width: 12px;
+}
+.icon-cell {
+  height: 14px;
+  width: 14px;
+}
+.icon-mail {
+  height: 13px;
+  width: 16px;
+}
+.form-check-policy:checked + .form-label-policy::before {
+  background-image: url('../images/icon-check.svg');
+  background-repeat: no-repeat;
+  outline: none;
+  background-color: #188ce8;
+}
+
+.form-label-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    width: 14px;
+    height: 14px;
+    outline: 2px solid #000;
+    background-color: #ffffff;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+  }
+}
+
+.assignment-link {
+  color: var(--accent-color);
+  margin-left: 5px;
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus .close-icon {
+  fill: var(--accent-color);
+}
