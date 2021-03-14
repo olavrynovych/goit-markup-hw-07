@@ -1,11 +1,15 @@
-.what-we-do-item:not(:last-child) {
-  margin-right: 30px;
-}
+// .what-we-do-item:not(:last-child) {
+//   margin-right: 30px;
+// }
 .what-we-do-item {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .what-we-do-item-svg {
   display: flex;
